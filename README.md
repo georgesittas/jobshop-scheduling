@@ -28,3 +28,9 @@ this project are:
 - jobshop_data.pl : data file used to test the program.
 
 
+### Optimal Vertex Cover
+
+Goal for this project is to solve the [vertex cover problem](https://en.wikipedia.org/wiki/Vertex_cover), seen as an optimization problem.
+Basically, given a graph (which can be produced by graph.pl), we want to find the smallest set of vertices in the graph that cover the whole graph.
+The libraries [ic](https://www.eclipseclp.org/doc/bips/lib/ic/index.html) and [branch_and_bound](http://eclipseclp.org/doc/bips/lib/branch_and_bound/index.html)
+were used to solve this problem and the ones that follow.
