@@ -2,7 +2,7 @@
 
 This project contains the solutions to various search problems, including some constraint satisfaction problems,
 implemented in [ECLiPSe](https://en.wikipedia.org/wiki/ECLiPSe) Prolog. These problems were given as assignments
-for the course Logic Programming ([YS05](http://cgi.di.uoa.gr/~takis/ys05.html)), NKUA, and they all received a
+for the course Logic Programming ([YS05](http://cgi.di.uoa.gr/~takis/ys05.html)), NKUA, and they all received
 perfect scores. A brief description of the problems follows:
 
 
