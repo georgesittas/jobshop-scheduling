@@ -24,7 +24,7 @@ viewing it as a search problem. The first one only takes into account the jobs, 
 second one adds an extra constraint: each task can only be completed by a number of workers (staff). Some auxiliary files provided for
 this project are:
 
-- jobshop_validator.pl : validates whether a job-shop scheduling is valid or not (based on job overlap constraints etc).
+- jobshop_validator.pl : validates whether a schedule is valid or not (based on job overlap constraints etc).
 - jobshop_data.pl : data file used to test the program.
 
 
