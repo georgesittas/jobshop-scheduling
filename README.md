@@ -21,4 +21,10 @@ following predicates were implemented:
 
 Goal for this project is to solve two variants of the [job-shop scheduling problem](https://en.wikipedia.org/wiki/Job_shop_scheduling),
 viewing it as a search problem. The first one only takes into account the jobs, tasks, machine types/counts and total deadline, while the
-second one adds an extra constraint: each task can only be completed by a number of workers (staff).
+second one adds an extra constraint: each task can only be completed by a number of workers (staff). Some auxiliary files provided for
+this project are:
+
+- jobshop_validator.pl : validates whether a job-shop scheduling is valid or not (based on job overlap constraints etc).
+- jobshop_data.pl : data file used to test the program.
+
+
