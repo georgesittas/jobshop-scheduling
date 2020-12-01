@@ -12,4 +12,6 @@ Goal for this project is to get acquainted with matrices in prolog, which are re
 following predicates were implemented:
 
 - cart_prod(Sets, CP) : CP is the cartesian product of the sets (lists) contained in Sets.
-- 
+- matr_transp(M, T) : T is the transpose of the matrix M.
+- matr_mult(M1, M2, M) : M is equal to the result of the matrix multiplication M1 • M2.
+- matr_det(M, D) : D is equal to the determinant of the square matrix M.
