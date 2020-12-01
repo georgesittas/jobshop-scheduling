@@ -15,3 +15,10 @@ following predicates were implemented:
 - matr_transp(M, T) : T is the transpose of the matrix M.
 - matr_mult(M1, M2, M) : M is equal to the result of the matrix multiplication M1 • M2.
 - matr_det(M, D) : D is equal to the determinant of the square matrix M.
+
+
+### Jobshop
+
+Goal for this project is to solve two variants of the [job-shop scheduling problem](https://en.wikipedia.org/wiki/Job_shop_scheduling),
+viewing it as a search problem. The first one only takes into account the jobs, tasks, machine types/counts and total deadline, while the
+second one adds an extra constraint: each task can only be completed by a number of workers (staff).
