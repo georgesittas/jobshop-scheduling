@@ -47,3 +47,9 @@ domains, instead of integer domains.
 
 ### Jobshop Opt
 
+Goal for this project is again to solve the second variant of the job-shop problem, seen as an optimization problem this time. The chosen
+utility function is the maximum possible deadline for which the jobs can be scheduled (that is, we're trying to schedule the jobs such that
+the last job is scheduled as early as possible). Some auxiliary files provided for this project are:
+
+- jobshop_opt_data.pl : data file used to test the program.
+- rand_js_data.c : C source file that produces random data files to test the program with.
