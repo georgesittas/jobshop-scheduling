@@ -11,5 +11,5 @@ A brief description of the problem definitions follows:
 Goal for this project is to get acquainted with matrices in prolog, which are represented as lists of lists. The
 following predicates were implemented:
 
-- cart_prod(Sets, CartesianProduct) : CartesianProduct is the cartesian product of the sets (lists) contained in Sets.
+- cart_prod(Sets, CP) : CP is the cartesian product of the sets (lists) contained in Sets.
 - 
