@@ -38,10 +38,11 @@ The ECLiPSe libraries [ic](https://www.eclipseclp.org/doc/bips/lib/ic/index.html
 
 ### Stable Marriages
 
-Goal for this project is to solve the [stable marriages problem](https://en.wikipedia.org/wiki/Stable_marriage_problem), seen as a CSP.
-The idea is that we have N men and N women and a list of partner preferences for each one of them (of the other sex), and we want to
-match them into pairs, so that no unstable pair exists. The ECLiPSe library [fd](http://eclipseclp.org/doc/bips/lib/fd/index.html) was
-used for this problem, in order to use variables with symbolic name domains, instead of integer domains.
+Goal for this project is to solve the [stable marriages problem](https://en.wikipedia.org/wiki/Stable_marriage_problem), seen as a
+[CSP](https://en.wikipedia.org/wiki/Constraint_satisfaction_problem). The idea is that we have N men and N women and a list of partner
+preferences for each one of them (of the other sex), and we want to match them into pairs, so that no unstable pair exists. The ECLiPSe
+library [fd](http://eclipseclp.org/doc/bips/lib/fd/index.html) was used for this problem, in order to use variables with symbolic name
+domains, instead of integer domains.
 
 
 ### Jobshop Opt
