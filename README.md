@@ -6,7 +6,7 @@ Programming ([YS05](http://cgi.di.uoa.gr/~takis/ys05.html)), NKUA, and they all 
 A brief description of the problem definitions follows:
 
 
-## Matrices
+### Matrices
 
 Goal for this project is to get acquainted with matrices in prolog, which are represented as lists of lists. The
 following predicates were implemented:
