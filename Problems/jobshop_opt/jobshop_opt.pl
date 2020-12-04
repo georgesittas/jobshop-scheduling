@@ -25,7 +25,7 @@ jobshop_opt(Jobs, Staff, Schedule, Cost, Delta, Timeout) :-
 	Cost #= max(EndTimes),
 	append(MachineIDs, StartTimes, GoalVars),
 	bb_min(search(GoalVars, 0, input_order, indomain, complete, []),
-		   Cost, bb_options{timeout:Timeout, delta:Delta}),
+		      Cost, bb_options{timeout:Timeout, delta:Delta}),
 	schedule(TaskVars, Machines, Schedule).
 
 get_machines(Machines) :-
@@ -98,8 +98,7 @@ non_overlapping_tasks_constr([(_, Start, End, M_ID) | Rest]) :-
 	non_overlapping_tasks_constr(Rest).
 
 non_overlapping_tasks_constr1(_, _, _, []).
-non_overlapping_tasks_constr1(S1, E1, M_ID1,
-						 [(_, S2, E2, M_ID2) | Rest]) :-
+non_overlapping_tasks_constr1(S1, E1, M_ID1, [(_, S2, E2, M_ID2) | Rest]) :-
 	(M_ID1 #= M_ID2 => (E1 #=< S2 or E2 #=< S1)),
 	non_overlapping_tasks_constr1(S1, E1, M_ID1, Rest).
 
@@ -129,7 +128,7 @@ split_TaskVars([(_, S, E, M) | Rest], [S|Ss], [E|Es], [M|Ms]) :-
 
 schedule(_, [], []).
 schedule(TaskVars, [(MachType, ID) | Machines],
-				   [execs(MachType, Timeline) | Rest]) :-
+         [execs(MachType, Timeline) | Rest]) :-
 	findall((T, S, E, ID), member((T, S, E, ID), TaskVars), TVs),
 	findall(S, member((_, S, _, _), TVs), StartTimes),
 	sort(StartTimes, SortedStartTimes),
