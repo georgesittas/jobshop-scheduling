@@ -8,7 +8,7 @@
  *    End:   when the task stops being processed
  *    M_ID:  the id of the machine on which the task is being
  *           processed. This id can be mapped back to a single
- *			 machine type, with the help of the id_range predicate.
+ *	     machine type, with the help of the id_range predicate.
  *
  */
 
