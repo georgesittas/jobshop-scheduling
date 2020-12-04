@@ -42,7 +42,10 @@ Goal for this project is to solve the [stable marriages problem](https://en.wiki
 [CSP](https://en.wikipedia.org/wiki/Constraint_satisfaction_problem). The idea is that we have N men and N women and a list of partner
 preferences for each one of them (of the other sex), and we want to match them into pairs, so that no unstable pair exists. The ECLiPSe
 library [fd](http://eclipseclp.org/doc/bips/lib/fd/index.html) was used for this problem, in order to use variables with symbolic name
-domains, instead of integer domains.
+domains, instead of integer domains. Some auxiliary files provided for this project are:
+
+- randstablefddata.c : C source file that produces random data files to test the program with.
+- stablefd_data : data file used to test the program.
 
 
 ### Jobshop Opt
