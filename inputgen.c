@@ -2,21 +2,18 @@
 #include <stdlib.h>
 #include <time.h>
 
-/*
-   Usage: rand_js_data <seed> <number of jobs> <maximum tasks per job>
-                       <maximum task duration> <maximum staff per task>
-                       <number of machine types>
-                       <maximum number of machines per type>
-  
-   Defaults:
-      <seed>: Current time
-      <number of jobs>: 5
-      <maximum tasks per job>: 4
-      <maximum task duration>: 4
-      <maximum staff per task>: 3
-      <number of machine types>: 2
-      <maximum number of machines per type>: 3
-*/
+/**
+ * Usage: ./inputgen OPTIONS
+ *
+ * OPTIONS (with default values):
+ *     <seed>: current time
+ *     <number of jobs>: 5
+ *     <maximum tasks per job>: 4
+ *     <maximum task duration>: 4
+ *     <maximum staff per task>: 3
+ *     <number of machine types>: 2
+ *     <maximum number of machines per type>: 3
+ */
 
 int main(int argc, char *argv[])
 {  int i, j;
@@ -82,4 +79,3 @@ int main(int argc, char *argv[])
    free(durs);
    return 0;
 }
-

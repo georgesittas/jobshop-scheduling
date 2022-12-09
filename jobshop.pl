@@ -1,21 +1,20 @@
-/* Notes:
+/** Notes:
  *
- * 1. The "Machines" variable is a list of (<machine type>, <id>)
- *    tuples. This list is produced by the get_machines predicate.
+ * 1. The Machines variable is a list of (<machine_type>, <ID>) tuples, produced by get_machines.
  *
  * 2. Each task T corresponds to 3 variables:
- *    Start: when the task starts being processed
- *    End:   when the task stops being processed
- *    M_ID:  the id of the machine on which the task is being
- *           processed. This id can be mapped back to a single
- *	     machine type, with the help of the id_range predicate.
+ * 
+ *    Start: when the task starts being processed.
+ *    End:   when the task stops being processed.
+ *    M_ID:  the ID of the machine on which the task is being processed. This ID can be mapped back
+ *           to a single machine type, with the help of id_range.
  *
  */
 
 :- lib(ic).
 :- lib(branch_and_bound).
 
-jobshop_opt(Jobs, Staff, Schedule, Cost, Delta, Timeout) :-
+jobshop(Jobs, Staff, Schedule, Cost, Delta, Timeout) :-
 	get_machines(Machines),
 	findall(TL, (member(J, Jobs), job(J, TL)), TaskLists),
 	flatten(TaskLists, Tasks),

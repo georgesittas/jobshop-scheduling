@@ -22,4 +22,3 @@ task(t51, m2, 3, 2).
 
 machine(m1, 2).
 machine(m2, 2).
-
